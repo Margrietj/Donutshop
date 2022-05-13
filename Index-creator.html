@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img class="logo" src="/links/Sample Logo.png" alt="logo">
+            <img id="mobile-menu" class="mobile-menu" src="/links/menu.svg" alt="open navigation">
+            <nav id="top-nav" class="top-nav">
+                <img id="mobile-menu-exit" class="mobile-menu-exit" src="/links/exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li><a href="Index.html">Home</a></li>
+                    <li class="current"><a href="#">Donut creator</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li class="bestellen-cta"><button type="button">Bestellen</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h1>Jouw donut</h1>
+
+            <div class="container-styling">
+            <div class="container-image-ingredient">
+                <img class="img-creator" id="img-dough" src="/links/Plaindough.png" alt="donut deeg normaal">
+                <!--
+                <img class="img-creator" src="../Project 4/links/Cinnamondough.png" alt="donut deeg kaneel">
+                <img class="img-creator" src="../Project 4/links/Chocolatdough.png" alt="donut deeg chocolade">
+                <img class="img-creator" src="../Project 4/links/Redvelvetdough.png" alt="donut deeg Redvelvet">
+                -->
+
+                <img class="img-creator" id="img-glaze" src="/links/Glaze_Sugar.png" alt="donut glazuur suiker">
+                <!--
+                <img class="img-creator" src="../Project 4/links/Glaze_Strawberry.png" alt="donut glazuur aardbei">
+                <img class="img-creator" src="../Project 4/links/Glaze_Bosbes.png" alt="donut glazuur bosbes">
+                <img class="img-creator" src="../Project 4/links/Glaze_Banana.png" alt="donut glazuur banaan">
+                <img class="img-creator" src="../Project 4/links/Glaze_Chocolat.png" alt="donut glazuur chocolade">
+                -->
+
+
+                <img class="img-creator" id="img-topping" src="/links/Topping_SprinklesMulti.png" alt="donut topping multi color sprinkels">
+                <!--
+                <img class="img-creator" src="../Project 4/links/Topping_Cookiemonster.png" alt="donut topping cookie monster sprinkels">
+                <img class="img-creator" src="../Project 4/links/Topping_Marshmellows.png" alt="donut topping marshmellows">
+                <img class="img-creator" src="../Project 4/links/Topping_Chocoballs.png" alt="donut topping chocoballs">
+                -->
+
+            </div>
+
+            <div class="left-column-creator">
+                <div class="ingredient-container">
+                    <p class="text-dough">Donut</p>
+                    <div class="options-donut-glazuur-topping">
+                        <button onclick="DeegNormaal()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#CFA77D;"></div>
+                            <p class="text-ingredient-button">Normaal</p>
+                        </button>
+                        <button onclick="DeegKaneel()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#DE8451;"></div>
+                            <p class="text-ingredient-button">Kaneel</p>
+                        </button>
+                        <button onclick="DeegChocolade()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#724136;"></div>
+                            <p class="text-ingredient-button">Chocolade</p>
+                        </button>
+                        <button onclick="DeegRedvelvet()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#C04E4C;"></div>
+                            <p class="text-ingredient-button">Redvelvet</p>
+                        </button>
+                    </div>
+
+                    <p class="text-dough">Glazuur</p>
+                    <div class="options-donut-glazuur-topping">
+                        <button onclick="GlazuurSuiker()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#C1C5D9;"></div>
+                            <p class="text-ingredient-button">Suiker</p>
+                        </button>
+                        <button onclick="GlazuurAardbei()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#D6909F;"></div>
+                            <p class="text-ingredient-button">Aardbei</p>
+                        </button>
+                        <button onclick="GlazuurBosbes()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#B091CF;"></div>
+                            <p class="text-ingredient-button">Bosbes</p>
+                        </button>
+                        <button onclick="GlazuurBanaan()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#EDD995;"></div>
+                            <p class="text-ingredient-button">Banaan</p>
+                        </button>
+                        <button onclick="GlazuurChocolade()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#724136;"></div>
+                            <p class="text-ingredient-button">Chocolade</p>
+                        </button>
+                    </div> 
+
+                    <p class="text-dough">Topping</p>
+                    <div class="options-donut-glazuur-topping">
+                        <button onclick="ToppingMultiSprinkels()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#D95672;"></div>
+                            <p class="text-ingredient-button">Multi-sprinkels</p>
+                        </button>
+                        <button onclick="ToppingCookieMonster()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#6D88E8;"></div>
+                            <p class="text-ingredient-button">Cookie-monster</p>
+                        </button>
+                        <button onclick="ToppingMarshmellows()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#F0B9C5;"></div>
+                            <p class="text-ingredient-button">Marshmellows</p>
+                        </button>
+                        <button onclick="ToppingChocoballs()" type="button" class="ingredient-button">
+                            <div class="ingredient-color-div" style="background-color:#724136;"></div>
+                            <p class="text-ingredient-button">Chocoballs</p>
+                        </button>
+                    </div> 
+                        
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-items">
+                <img class="logo-footer" src="/links/Sample Logo.png" alt="logo">
+                <nav class="footer-nav">
+                    <ul class="primary-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Stores</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">&copy;Donutshop,2022</p>
+            </div>
+            <div class="socialmedia">
+                <ul class="social-icons">
+                    <li><img src="/links/icon-social-linkedin.png" alt="linkedin icon"></li>
+                    <li><img src="/links/icon-social-instagram.png" alt="Instagram icon"></li>
+                    <li><img src="/links/icon-social-facebook.png" alt="Facebook icon"></li>
+                    <li><img src="/links/icon-social-twitter.png" alt="Twitter icon"></li>
+                </ul>
+            </div>
+            <img class="logo-footer-mobile" src="/links/Sample Logo.png" alt="logo">
+        </div>
+    </footer>
+<!--
+<script>
+    function GlazuurSuiker() {
+    document.getElementById("img-glaze").src="https://cdn.shopify.com/s/files/1/0486/3452/7899/t/2/assets/konf_donut_Glasur_Erdnusscreme_Main_0000.png?452";
+}
+ 
+function GlazuurAardbei() {
+    document.getElementById("img-glaze").src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Head.svg/290px-Head.svg.png";
+}
+
+</script>
+-->
+<script>
+    const mobileBtn = document.getElementById('mobile-menu')
+        nav = document.getElementById('top-nav')
+        mobileBtnExit = document.getElementById('mobile-menu-exit')
+
+        mobileBtn.addEventListener('click', () => {
+       nav.classList.add('menu-btn'); 
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+       nav.classList.remove('menu-btn');
+    }) 
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

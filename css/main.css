@@ -1,0 +1,524 @@
+:root {
+  --primary-color-pink: #D6A6A6;
+  --primary-color-blue: #9ECCD4;
+  --pirmary-color-violet: #A7A6D6;
+}
+
+body {
+  background: #E4F2F4;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #1E1E1E;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.subhead {
+  font-size: 1.5em;
+  color: #434343;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+button {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  border: none;
+  border-radius: .7em;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  margin-top: .5em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar nav.top-nav {
+  display: none;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+nav.top-nav.menu-btn {
+  display: block;
+}
+
+nav.top-nav {
+  position: fixed;
+  background: #A7A6D6;
+  z-index: 9;
+  width: 55%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav.top-nav .mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+nav.top-nav ul.primary-nav {
+  margin-top: 3em;
+}
+
+nav.top-nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav.top-nav li a:hover {
+  font-weight: bold;
+}
+
+nav.top-nav li.bestellen-cta {
+  display: block;
+  padding: .5em;
+  float: right;
+}
+
+nav.top-nav li.bestellen-cta button {
+  background: var(--primary-color-pink);
+  padding: .3em 1em;
+  font-size: 1em;
+}
+
+.hero {
+  text-align: left;
+}
+
+.hero .left-column {
+  color: #1E1E1E;
+}
+
+.hero .left-column h1 {
+  margin-top: 3.5em;
+  margin-bottom: 0;
+}
+
+.hero .left-column .subhead {
+  margin: .5em 0 1.7em 0;
+}
+
+.hero .left-column .hero-primary-cta {
+  background: var(--pirmary-color-violet);
+  padding: .5em 1.5em;
+}
+
+.hero .hero-img {
+  width: 120%;
+  position: absolute;
+  right: -3em;
+  z-index: -1;
+  opacity: 0.3;
+  top: 3em;
+  max-width: 650px;
+  height: auto;
+}
+
+.content-favorites h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content-favorites .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.content-favorites .product-list .card-product {
+  background: white;
+  width: 18em;
+  height: 29em;
+  margin: 0 1.5em 1.5em 0;
+  border-radius: .7em;
+}
+
+.content-favorites .product-list .card-product .product-img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-favorites .product-list .card-product .description {
+  text-align: center;
+}
+
+.content-favorites .product-list .card-product .description .card-product-name {
+  font-size: 1.5em;
+  color: #1E1E1E;
+  font-weight: bold;
+  margin: .3em .3em;
+}
+
+.content-favorites .product-list .card-product .description .card-product-price {
+  font-size: 1.1em;
+  color: #434343;
+  font-weight: normal;
+  margin: .3em .2em 2em .2em;
+}
+
+.content-favorites .product-list .card-product .shopping-bag-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5em;
+  height: 3em;
+  padding: .8em 1.7em;
+  background-color: var(--primary-color-pink);
+}
+
+.content-favorites .favorites-cta {
+  background: var(--primary-color-blue);
+  padding: .5em 1.5em;
+}
+
+.content-donut-creator .creator-donut-img {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-donut-creator .right-column h1 {
+  margin: 0 0 0.8em 0;
+}
+
+.content-donut-creator .right-column .creator-cta {
+  background: var(--primary-color-pink);
+  padding: .5em 1.5em;
+  margin-top: 1em;
+}
+
+.content-store-finder .store-img {
+  display: none;
+}
+
+.content-store-finder .left-column h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content-store-finder .left-column .subhead {
+  margin: .5em 0 1.7em 0;
+}
+
+.content-store-finder .left-column .finder-cta {
+  background: var(--pirmary-color-violet);
+  padding: .5em 1.5em;
+}
+
+.container-image-ingredient {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: block;
+}
+
+.img-creator {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+#img-dough {
+  z-index: 3;
+}
+
+#img-glaze {
+  z-index: 4;
+}
+
+#img-topping {
+  z-index: 5;
+}
+
+.left-column-creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.left-column-creator .ingredient-container {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #434343;
+}
+
+.left-column-creator .ingredient-container .options-donut-glazuur-topping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button {
+  padding: .3em .5em .3em .5em;
+  background-color: white;
+  color: #434343;
+  font-size: .75em;
+  font-weight: normal;
+  text-decoration: none;
+  border: #dfdfdf;
+  border-style: solid;
+  border-width: .1em;
+  border-radius: 3em;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1.5em 1.5em 0;
+  cursor: pointer;
+}
+
+.left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button .ingredient-color-div {
+  background-color: #434343;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 3em;
+  display: inline-block;
+  margin: .15em auto .15em auto;
+}
+
+.left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button p.text-ingredient-button {
+  display: none;
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+footer {
+  padding: 5em 2em;
+}
+
+footer .footer-items {
+  display: none;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+
+footer .social-icons li {
+  margin: .5em;
+}
+
+footer .logo-footer-mobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  nav.top-nav.top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  nav.top-nav.top-nav ul.primary-nav {
+    margin-top: .7em;
+  }
+  nav.top-nav.top-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav.top-nav.top-nav ul a {
+    color: #1E1E1E;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  nav.top-nav.top-nav li.current a {
+    font-weight: bold;
+  }
+  .left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button {
+    padding: .2em 1em .2em .5em;
+    border-radius: 3em;
+  }
+  .left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button .ingredient-color-div {
+    height: 2em;
+    width: 2em;
+    border-radius: 3em;
+    margin: auto .5em auto 0;
+  }
+  .left-column-creator .ingredient-container .options-donut-glazuur-topping .ingredient-button p.text-ingredient-button {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 5em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .container .left-column {
+    width: 50%;
+  }
+  .hero .container .hero-img {
+    z-index: 1;
+    opacity: 1;
+    right: 1em;
+  }
+  .content-donut-creator .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content-donut-creator .container .right-column {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5em;
+  }
+  .content-donut-creator .container .creator-donut-img {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .content-store-finder .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content-store-finder .container .left-column {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .content-store-finder .container .store-img {
+    display: inline;
+    width: 40%;
+  }
+  .container-styling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .left-column-creator {
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .container-image-ingredient {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: absolute;
+    right: 2em;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

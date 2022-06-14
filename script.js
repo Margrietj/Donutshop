@@ -1,19 +1,22 @@
-function DeegNormaal() {
-    document.getElementById("img-dough").src="links/Plaindough.png";
-}
+// function DeegNormaal() {
+//     document.getElementById("img-dough").src="links/Plaindough.png";
+// }
  
-function DeegKaneel() {
-    document.getElementById("img-dough").src="links/Cinnamondough.png";
-}
+// function DeegKaneel() {
+//     document.getElementById("img-dough").src="links/Cinnamondough.png";
+// }
 
-function DeegChocolade() {
-    document.getElementById("img-dough").src="links/Chocolatdough.png";
-}
+// function DeegChocolade() {
+//     document.getElementById("img-dough").src="links/Chocolatdough.png";
+// }
 
-function DeegRedvelvet() {
-    document.getElementById("img-dough").src="links/Redvelvetdough.png";
-}
+// function DeegRedvelvet() {
+//     document.getElementById("img-dough").src="links/Redvelvetdough.png";
+// }
 
+function updateDeeg(_variant){
+    document.getElementById("img-dough").src="links/"+_variant+".png";
+}
 
 
 function GlazuurSuiker() {
